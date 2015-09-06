@@ -45,8 +45,3 @@ jsonExple.database=../data/json/base/
 mongodb.dsn="mongodb://monuser:pass@localhost:27017/mabase"
 mongodb.sgbd=mongodb
 mongodb.database=mabase
-
-monApplication.dsn="mysql:dbname=siteDb;host=localhost"
-monApplication.sgbd=pdo_mysql
-monApplication.username=root
-monApplication.password=
