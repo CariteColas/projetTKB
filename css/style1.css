@@ -1,0 +1,38 @@
+
+
+article{
+width : 55%;
+float : left;
+}
+
+aside{
+width : 40%;
+
+float : left
+}
+
+footer {
+clear:both;
+width:100%;
+}
+
+article img{
+margin-left: 10px;
+width : 90%;
+}
+#titre_accueil{
+text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+ margin-left : 41%;
+}
+
+#titre_gestion{
+text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+ margin-left : 21%;
+
+}
+
+#titre_insertion{
+text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+ margin-left : 41%;
+
+}
