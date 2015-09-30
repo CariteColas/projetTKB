@@ -16,7 +16,7 @@
     <link href="bootstrap-3.3.5/dist/css/bootstrap-theme.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <!--<link href="theme.css" rel="stylesheet">-->
+	<link href="css/master_style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="bootstrap-3.3.5/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -33,11 +33,11 @@
 
     <div class="container">
 		<header class="row">
-			<section class="col-sm-2" style="text-align: center;">
-				Section
+			<section class="col-sm-2" >
+				<img src="Images/gauche.png"/>
 			</section>
         
-			<div class="col-sm-8" style="text-align: center;">
+			<div class="col-sm-8" >
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -65,97 +65,88 @@
 				</a>
 			  </div>
 			</div>
-			<section class="col-sm-2" style="text-align: center;">
-				Section
+			<section class="col-sm-2">
+				<img src="Images/droite.png" style="margin-left : -30px;"/>
 			</section>
      	</header>
    
 		<div class="row">
-			<nav class="col-sm-12 navbar navbar-inverse" >
-				<div class="container">
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
+			<div class="container">
+			  <nav class="navbar navbar-inverse" role="navigation">   
+				<div class="navbar-header">   
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
-				  <a class="navbar-brand" href="#">Bootstrap theme</a>
+				  <a class="navbar-brand" href="#">TKB</a>
 				</div>
-				<div id="navbar" class="navbar-collapse collapse">
+				<div class="collapse navbar-collapse">
 				  <ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					  <ul class="dropdown-menu" role="menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
+					<li> <a href="#">Accueil</a> </li>
+					<li class="dropdown"> 
+					  <a data-toggle="dropdown" href="#">Évenements <b class="caret"></b></a>
+					  <ul class="dropdown-menu">
+						<li><a href="#">En cours</a></li>
+						<li><a href="#">Déjà paru</a></li>
+						<li><a href="#">Top 10</a></li>
 						<li class="divider"></li>
-						<li class="dropdown-header">Nav header</li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">One more separated link</a></li>
+						<li><a href="#">Au hasard</a></li>
 					  </ul>
-					</li>
+					</li> 
+					<li> <a href="#">Albums</a> </li>
 				  </ul>
-				</div><!--/.nav-collapse -->
-			  </div>
-			</nav>
+				  <ul class="nav navbar-nav navbar-right">
+					<li> <a href="#">Contact</a> </li>
+				  </ul>
+				  <form class="navbar-form navbar-right inline-form" role="form">
+					<div class="form-group">
+					  <input type="search" class="input-sm form-control" placeholder="Recherche">
+					  <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+					</div>
+				  </form>
+				</div>
+			  </nav>
 		</div>
 		
 		<div class="row">
 			<aside class="col-md-2" style="text-align: center;">
 				Aside
             </aside>
-			<article class="col-md-8" style="text-align: center;">
+		<article class="col-lg-8">
+				<div class="col-lg-12" >
+					<div class="panel panel-primary">
+					  <table class="table table-striped table-condensed">
+						<div class="panel-heading"> 
+						  <h3 class="panel-title">TITRE EVENT</h3>
+						</div>
+						<thead>
+						  <tr>
 				
-				<table class="table table-bordered table-striped table-condensed">
-				   <caption>
-					  <h4>TKB project</h4>
-				   </caption>
-				   <thead>
-					  <tr>
-					 <th>Membres</th>
-							<th>description</th>
-			  </tr>
-		   </thead>
-		   <tbody>
-				  <tr>
-					<td>Lenaik Rinquin</td>
-					<td>La seule fille du groupe OMG</td>
-				  </tr>
-				  <tr>
-					<td>Yohann Le Youdec</td>
-					<td>Phenomène ingérable...</td>
-          </tr>
-          <tr>
-            <td>Malvin Paquereau</td>
-            <td>Plus sympa en photo...</td>
-          </tr>
-          <tr>
-            <td>Colas Carité</td>
-            <td>Le seul arabe du groupe OMG!!!</td>
-          </tr>
-          <tr>
-            <td>Jeremy Roger</td>
-            <td>Sang vif, esprit lent...</td>
-          </tr>
-          <tr>
-            <td>Théophile Marcadé</td>
-            <td>Le seul génie du groupe OMG!!!</td>
-          </tr>
-			</tbody>
-		</table>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<th>Description</th>
+						  </tr>
+						  <tr>	
+						<td>Adolescebat autem obstinatum propositum erga haec et similia multa scrutanda, stimulos admovente regina, quae abrupte mariti fortunas trudebat in exitium praeceps, cum eum potius lenitate feminea ad veritatis humanitatisque viam reducere utilia suadendo deberet, ut in Gordianorum actibus factitasse Maximini truculenti illius imperatoris rettulimus coniugem.</td>
+						  </tr>
+						  <tr>
+							<th><a href="#">commentaire <span class="badge">12</span></a></th>
+						  </tr>
+						</tbody>
+						</table>
+				</div>
+
 						
-            </article>
+			</article>
 			<section class="col-sm-2" style="text-align: center;">
 				Section
 			</section>
-        </div>
-        
-      </div>
+		</div>
+				
+
       <footer class="row" style="text-align: center;">
         <div class="col-sm-12">
           Pied de page
