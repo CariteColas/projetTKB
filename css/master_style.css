@@ -2,3 +2,10 @@
   display: inline-block;
   width: 100px;
 }
+
+body {
+color:black;
+background-color:white;
+background-image:url(../images/wallpaper.jpg);
+
+}
