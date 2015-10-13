@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <title>TKB Project</title>
@@ -9,7 +8,206 @@
     <link href="bootstrap-3.3.5/dist/css/bootstrap.css" rel="stylesheet">
 	<link href="css/master_style.css" rel="stylesheet">
 	<link href="bootstrap-3.3.5/dist/css/bootstrap-theme.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css?v=2.1.5" media="screen" />
+	<link rel="stylesheet" type="text/css" href="js/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap-3.3.5/dist/js/jquery-1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.5/docs/assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+		<!-- Add jQuery library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
 
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			// Disable opening and closing animations, change title type
+			$(".fancybox-effects-b").fancybox({
+				openEffect  : 'none',
+				closeEffect	: 'none',
+
+				helpers : {
+					title : {
+						type : 'over'
+					}
+				}
+			});
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+			// Remove padding, set opening and closing animations, close if clicked and disable overlay
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+
+				openEffect : 'elastic',
+				openSpeed  : 150,
+
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+
+				closeClick : true,
+
+				helpers : {
+					overlay : null
+				}
+			});
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			/*
+			 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+			 */
+
+			$('.fancybox-thumbs').fancybox({
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+				arrows    : false,
+				nextClick : true,
+
+				helpers : {
+					thumbs : {
+						width  : 50,
+						height : 50
+					}
+				}
+			});
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+			/*
+			 *  Open manually
+			 */
+
+			$("#fancybox-manual-a").click(function() {
+				$.fancybox.open('1_b.jpg');
+			});
+
+			$("#fancybox-manual-b").click(function() {
+				$.fancybox.open({
+					href : 'iframe.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+
+			$("#fancybox-manual-c").click(function() {
+				$.fancybox.open([
+					{
+						href : '1_b.jpg',
+						title : 'My title'
+					}, {
+						href : '2_b.jpg',
+						title : '2nd title'
+					}, {
+						href : '3_b.jpg'
+					}
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+
+
+		});
+	</script>
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,63 +257,62 @@
 			<aside class="col-lg-12 col-md-12 col-sm-12" >
 				 <section class="row">
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos"  class="thumbnail" >
-							<img src="images/TEST.jpg"  alt="Tigre" class="img-rounded">
-						</a>
-
-					</div>
-					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos2" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
-							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos2" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos2" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
-							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos2" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 ">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 ">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div>
 					<div class="col-xs-4 col-sm-3 col-md-2 ">
-						<a data-toggle="modal"  href="#infos2" class="thumbnail">
+						<a  class="thumbnail fancybox" href="images/TEST.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-3 col-md-2 ">
+						<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
 							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div> 
@@ -216,13 +413,8 @@
       </footer>
     </div>
 	
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bootstrap-3.3.5/dist/js/jquery-1.11.1.min.js"></script>
-    <script src="bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-3.3.5/docs/assets/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+	
+
+
   </body>
 </html>
