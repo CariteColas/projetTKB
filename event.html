@@ -232,7 +232,7 @@
 					<li class="dropdown"> 
 					  <a data-toggle="dropdown" href="#">Évenements <b class="caret"></b></a>
 					  <ul class="dropdown-menu">
-						<li><a href="#">En cours</a></li>
+						<li ><a href="#">En cours</a></li>
 						<li><a href="#">Déjà paru</a></li>
 						<li><a href="#">Top 10</a></li>
 						<li class="divider"></li>
@@ -316,33 +316,7 @@
 							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
 						</a>
 					</div> 
-				<div class="modal fade" id="infos">
-					  <div class="modal-dialog modal-lg">
-						<div class="modal-content">
-						  <div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal">x</button>
-							<h4 class="modal-title">Plus d'informations</h4>
-							</div>
-							<div class="modal-body">
-								<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
-							</div>
-						</div>
-					</div>
-					</div>
-					<div class="modal fade" id="infos2">
-				  <div class="modal-dialog modal-lg">
-					<div class="modal-content">
-					  <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">x</button>
-						<h4 class="modal-title">Plus d'informations</h4>
-						</div>
-						<div class="modal-body">
-							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
-						</div>
-					</div>
-				</div>
-				</div>
-
+	
 			</aside>
 		</div>
 		<div class="row">
@@ -351,11 +325,32 @@
 			</section>
 			<article class="col-md-10" >
 				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					TITRE EVENT
+					<h3 class ="title">TITRE EVENT</h3>
 				</div> 
 				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<b>Description :</b><br/>
-					Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#description" data-toggle="tab">Description</a></li>
+						<li><a href="#Participant" data-toggle="tab">Participant</a></li>
+						<li><a href="#map" data-toggle="tab">map</a></li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active in fade" id="description">
+						<p>
+						Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.
+						</p>
+						</div>
+						<div class="tab-pane fade" id="Participant">
+						<ul>
+							<li><a href="#">Walloo</a></li>
+							<li><a href="#">Youdalf</a></li>
+							<li><a href="#">Nanaiiiiie</a></li>
+							<li><a href="#">Oayo</a></li>
+							<li><a href="#">Darkvarus</a></li>
+							<li><a href="#">Karélia</a></li>
+						</ul>
+						</div>
+						<div class="tab-pane fade" id="map"><img src ="Images/Exemple.png"/></div>
+					</div>
 				</div>
 				<div class="col-xs-6 col-sm-6 col-md-6 ">
 					<a href="#commentaire" data-toggle="collapse"> Commentaires <span class="badge">42</span></a>
@@ -368,23 +363,23 @@
 							<div class="panel-body"> 
 								<ul id="commentaires">
 									<li class="coms">
-										<h4>coms 1</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10</em></p></div> 		
+										<h4 class ="title">coms 1</h4>
+										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
 										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
 									</li>
 									<li class="coms">
-										<h4>coms 2</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10</em></p></div> 		
+										<h4 class ="title">coms 2</h4>
+										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Youdalf</a></em></p></div> 		
 										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
 									</li>
 									<li class="coms">
-										<h4>coms 3</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10</em></p></div> 		
+										<h4 class ="title">coms 3</h4>
+										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Oayo</a></em></p></div> 		
 										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
 									</li>
 									<li class="coms">
-										<h4>coms 4</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10</em></p></div> 		
+										<h4 class ="title">coms 4</h4>
+										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
 										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
 									</li>
 									

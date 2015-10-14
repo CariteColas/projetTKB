@@ -9,3 +9,25 @@ background-color:white;
 background-image:url(../images/wallpaper.jpg);
 
 }
+
+.title {
+border-bottom : solid 1px;
+border-bottom-color : #CCC;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.coms  {
+
+border : solid 1px;
+border-radius: 6px;
+background-color:white;
+margin-bottom : 3px;
+border-color : #CCC;
+padding : 10px;
+margin-left : -40px;
+
+
+}
