@@ -6,7 +6,7 @@
 body {
 color:black;
 background-color:white;
-background-image:url(../images/wallpaper.jpg);
+//background-image:url(../images/wallpaper.jpg);
 
 }
 
@@ -28,6 +28,12 @@ margin-bottom : 3px;
 border-color : #CCC;
 padding : 10px;
 margin-left : -40px;
+
+
+}
+
+p {
+margin : 10px;
 
 
 }
