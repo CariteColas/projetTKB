@@ -6,7 +6,7 @@
 body {
 color:black;
 background-color:white;
-//background-image:url(../images/wallpaper.jpg);
+background-image:url(../images/wallpaper.jpg);
 
 }
 
@@ -35,5 +35,33 @@ margin-left : -40px;
 p {
 margin : 10px;
 
+
+}
+
+/*[class*="col-"], footer {
+
+  border: 1px solid black;
+  border-radius: 6px;
+}*/
+
+.test_left {
+margin-left: 25px;
+margin-top : 120px;
+}
+
+.test_right {
+margin-top : 120px;
+
+}
+
+.gallery  {
+background-color:#606060;
+
+border: 1px solid black;
+border-color : #CCC;
+border-radius: 6px;
+margin-top : -10px;
+padding-top : 15px;
+margin-bottom : 10px;
 
 }
