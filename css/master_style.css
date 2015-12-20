@@ -5,8 +5,9 @@
 
 body {
 color:black;
-background-color:white;
-background-image:url(../images/wallpaper.jpg);
+background-color:#DCDCDC;
+  padding-top: 60px;
+/*background-image:url(../images/wallpaper.jpg);*/
 
 }
 
@@ -44,7 +45,7 @@ margin : 10px;
   border-radius: 6px;
 }*/
 
-.test_left {
+/*.test_left {
 margin-left: 25px;
 margin-top : 120px;
 }
@@ -64,4 +65,4 @@ margin-top : -10px;
 padding-top : 15px;
 margin-bottom : 10px;
 
-}
+}*/
