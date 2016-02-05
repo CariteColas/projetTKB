@@ -31,222 +31,162 @@
   </head>
 
   <body role="document">
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">   
-		     <div class="container">
-
-				<div class="navbar-header">   
-					<button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">TKB</a>
+	<!-----------------------------------Menu de connexion------------------------------------>
+	<header class="header-top">
+		<div class="container">
+			<div class="col-sm-12">
+				<div class="dropdown cpt">
+					<a class="btn-premium bgnoir pull-right" href="">Se connecter</a>	
+					<a class="btn-premium pull-right mr10" href="">Créer un compte</a>
 				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-							<li> <a href="#">Accueil</a> </li>
-							<li class="dropdown"> 
-							<a data-toggle="dropdown" href="#">Évenements <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-							<li ><a href="#">En cours</a></li>
-							<li><a href="#">Déjà paru</a></li>
-							<li><a href="#">Top 10</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Au hasard</a></li>
-						</ul>
-				</li> 
-					<li> <a href="#">Albums</a> </li>
+			</div>
+		</div>
+	</header>
+	<!----------------------------------------------------------------------------------------->
+	<nav class=" navbar navbar-top menu-top" id="menuperso">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img alt="teamKB" src="Images/logo.png"/>
+				</a>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="menu">
+				<ul id="menu-menu" class="nav navbar-nav m128">
+					<li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24">
+						<a title=="A propos" href="">
+							A propos
+						</a>
+					</li>
+					<li class="dropdown"> 
+					  <a data-toggle="dropdown" href="#">Évenements <span class="caret"></span></a>
+					  <ul class="dropdown-menu">
+						<li>
+							<a title=="En cours" href="#">
+							En cours
+							</a>
+						</li>
+						<li>
+							<a title=="Déjà paru" href="#">
+								Déjà paru
+							</a>
+						</li>
+						<li>
+							<a title=="Top 10" href="#">
+								Top 10
+							</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a title=="Top 10" href="#">
+								Au hasard
+							</a>
+						</li>
+					  </ul>
+					</li> 
+					<li> 
+						<a title=="Gallerie" href="#">Gallerie</a>
+					</li>
+					<li> 
+						<a title=="Profils" href="#">
+							Profils
+						</a>
+					</li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li> <a href="#">Contact</a> </li>
-				</ul>
-				<form class="navbar-form navbar-right inline-form" role="form">
-					<div class="form-group">
-						<input type="search" class="input-sm form-control" placeholder="Recherche">
-						<button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Chercher</button>
+			</div>
+		</div>
+	</nav>
+	<header class="container-fluid bandeau-acc">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="mb50">
+						<b>14</b>
+						évenements déjà publiés <br/>
+						<a class="dashed" href="">
+							<b>3 évenements</b>
+						</a>
+						 sont en cours 
+					</h1>
+						toi aussi, 
+						<a href="">publie</a>
+						, 
+						<a href="">commente</a>
+						et 
+						<a href="">participe</a>
+						à un maximum d'évenements.
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<aside role="complementary" class="filtre filt hidden-sm hidden-xs">
+		<div class="container">
+			<div class="col-md-8 pd20 pull-left ft18 mt05 grismid">
+				<i class=" glyphicon glyphicon-edit mr05 bleu">
+				</i>
+				<a class="mr10 grismid" href="" title="">Publie ton évenement</a>
+				
+				<i class=" glyphicon glyphicon-camera mr05 bleu">
+				</i>
+				<a class="mr10 grismid" href="" title="">Poste des photos de tes évenements</a>
+				
+			</div>
+			<div class="col-md-4 pd20 pull-right">
+				<form action="" autocomplete="on">
+					<div class="input-group custom-search-form">
+						<input type="text" id="s" name="s" class="form-control btn-upp" placeholder="Votre recherche">
+						<span class="input-group-btn">
+							<button class="btn btn-primary-search" type="button">
+								<span class="glyphicon glyphicon-search">
+								</span>
+							</button>
+						</span>
 					</div>
 				</form>
 			</div>
-		</nav>
-        
-		<header>
-			<div class="col-sm-12" >
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-				  <div class="item active">
-					<img src="Images/ENTETE.jpg" alt="First slide">
-				  </div>
-				  <div class="item">
-					<img src="Images/TEST.jpg" alt="Second slide">
-				  </div>
-				  <div class="item">
-					<img src="Images/TEST2.jpg" alt="Third slide">
-				  </div>
-				</div>
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
-			  </div>
+		</div>
+	</aside>
+	
+	<div class="container-fluid contenu" role="main">
+		<div class="container" id="newperso">
+		
+			<div class="contenu-tuto-acc">
+				
+				<h1> Nouveautés</h1>
+				
+				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
+					<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+						<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
+					</a>
+				</article>
+				
+				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
+					<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+						<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
+					</a>
+				</article>
+				
+				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
+					<a  class="thumbnail fancybox" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
+						<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
+					</a>
+				</article>
+			
 			</div>
-
-     	</header>
-   
 		
 		
-		<div class="row">
-			<section class ="col-sm-2">
-				<img src="Images/chat.jpg" />
-			</section>
-			<article class="col-md-8 well" >
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<h3 class ="title">TITRE EVENT</h3>
-				</div> 
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#description" data-toggle="tab">Description</a></li>
-						<li><a href="#Participant" data-toggle="tab">Participant</a></li>
-						<li><a href="#map" data-toggle="tab">map</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane active in fade" id="description">
-						<p>
-						Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.
-						</p>
-						</div>
-						<div class="tab-pane fade" id="Participant">
-						<ul>
-							<li><a href="#">Walloo</a></li>
-							<li><a href="#">Youdalf</a></li>
-							<li><a href="#">Nanaiiiiie</a></li>
-							<li><a href="#">Oayo</a></li>
-							<li><a href="#">Darkvarus</a></li>
-							<li><a href="#">Karélia</a></li>
-						</ul>
-						</div>
-						<div class="tab-pane fade" id="map"><img src ="Images/Exemple.png"/></div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 ">
-					<a href="#commentaire" data-toggle="collapse">Top commentaires <span class="badge">3</span></a>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 ">
-					NOTE
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<div id="commentaire" class="panel-collapse collapse">
-							<div class="panel-body"> 
-								<ul id="commentaires">
-									<li class="coms">
-										<h4 class ="title">coms 1</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 2</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Youdalf</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 3</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Oayo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 4</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									
-								</ul>
-							</div>
-					</div>
-				</div>
-				
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<h3 class ="title">TITRE EVENT</h3>
-				</div> 
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<ul class="nav nav-tabs">
-						<li class="active"><a href="#description" data-toggle="tab">Description</a></li>
-						<li><a href="#Participant" data-toggle="tab">Participant</a></li>
-						<li><a href="#map" data-toggle="tab">map</a></li>
-					</ul>
-					<div class="tab-content">
-						<div class="tab-pane active in fade" id="description">
-						<p>
-						Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.
-						</p>
-						</div>
-						<div class="tab-pane fade" id="Participant">
-						<ul>
-							<li><a href="#">Walloo</a></li>
-							<li><a href="#">Youdalf</a></li>
-							<li><a href="#">Nanaiiiiie</a></li>
-							<li><a href="#">Oayo</a></li>
-							<li><a href="#">Darkvarus</a></li>
-							<li><a href="#">Karélia</a></li>
-						</ul>
-						</div>
-						<div class="tab-pane fade" id="map"><img src ="Images/Exemple.png"/></div>
-					</div>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 ">
-					<a href="#commentaire" data-toggle="collapse">Top commentaires <span class="badge">3</span></a>
-				</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 ">
-					NOTE
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-12 ">
-					<div id="commentaire" class="panel-collapse collapse">
-							<div class="panel-body"> 
-								<ul id="commentaires">
-									<li class="coms">
-										<h4 class ="title">coms 1</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 2</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Youdalf</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 3</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Oayo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									<li class="coms">
-										<h4 class ="title">coms 4</h4>
-										<div class="date"><p class="paragraphe"><em>Posté le : 05/10 par <a href="#">Walloo</a></em></p></div> 		
-										<p id = "paragraphe">Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An, si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est, etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum, qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium nequissimus existimaretur.</p>					
-									</li>
-									
-								</ul>
-							</div>
-					</div>
-				</div>
-			</article>
 		</div>
-		</div>
-				
-
-      <footer class="row" style="text-align: center;">
-        <div class="col-sm-12">
-          Pied de page
-        </div>
-      </footer>
-    </div>
-
+	</div>
+	
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
