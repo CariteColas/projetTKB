@@ -112,11 +112,6 @@ a:hover{
     color: #fff;
 }
 
-.contenu-tuto-acc h1 {
-	margin-top : 10px;
-	margin-bottom : 40px;
-	font-family :"Roboto",Verdana;
-}
 
 .filtre {
     height: auto;
@@ -155,6 +150,26 @@ a:hover{
     -webkit-transition: .3s;
 }
 
+.thumbnail {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+	display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+	border: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    background: 0 0;
+    padding: 0;
+}
+
+
 #newperso.container{
 
 }
@@ -182,9 +197,16 @@ a:hover{
 
 .contenu-tuto-acc {
     height: auto;
-    padding: 0;
+    padding: 60px 0;
 	  font-weight: 400;
 }
+
+.contenu-tuto-acc h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 0;
+}
+
 
 .bgnoir {
     background: #1a1a1a!important;
@@ -197,6 +219,11 @@ a:hover{
 .mb50 {
     margin-bottom: 50px!important;
 }
+
+.mb60 {
+    margin-bottom: 60px!important;
+}
+
 
 
 .pull-right {
