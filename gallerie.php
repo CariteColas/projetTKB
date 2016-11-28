@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="fr">
   <head>
@@ -91,7 +91,7 @@
 					  </ul>
 					</li> 
 					<li> 
-						<a title=="Gallerie" href="gallerie.php">Gallerie</a>
+						<a title=="Gallerie" href="#">Gallerie</a>
 					</li>
 					<li> 
 						<a title=="Profils" href="#">
@@ -155,66 +155,76 @@
 		</div>
 	</aside>
 	
-	<div class="container-fluid contenu" role="main">
-		<div class="container" id="newperso">
-		
-			<div class="contenu-tuto-acc">
-				
-				<h1 class="text-center">Nouveautés</h1>
-				<h2 class="text-center mb60">Derniers évenements postés...</h2>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg"  title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
+	<div class="container-fluid">
+		<div class="col-md-12">
+			<h1>Bootstrap 3 Thumbnail Slider</h1>
+			<div class="well">
+				<div id="carouselGallery" class="carousel slide">
 					
-				</article>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg"  title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
-						</a>
+					<!-- Carousel items -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="row">
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+							</div>
+							<!--/row-->
+						</div>
+						<!--/item-->
+						<div class="item">
+							<div class="row">
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+							</div>
+							<!--/row-->
+						</div>
+						<!--/item-->
+						<div class="item">
+							<div class="row">
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+								<div class="col-sm-2"><a href="#x"><img src="images/TEST.jpg" alt="Image" class="img-responsive"></a>
+								</div>
+							</div>
+							<!--/row-->
+						</div>
+						<!--/item-->
 					</div>
-				</article>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-				</article>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg"  title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-				</article>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg"  title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-				</article>
-				
-				<article class="col-lg-4 col-md-4 col-sm-6 btn-mres">
-					<div class="thumbnail">
-						<a  class="hidden-xs" href="images/TEST2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet">
-							<img src="images/TEST2.jpg" alt="Tigre" class="img-rounded">
-						</a>
-					</div>
-				</article>
-			
+					<!--/carousel-inner--> <a class="left carousel-control" href="#carouselGallery" data-slide="prev">‹</a>
+
+					<a class="right carousel-control" href="#carouselGallery" data-slide="next">›</a>
+				</div>
+				<!--/carouselGallery-->
 			</div>
-		
-		
+			<!--/well-->
 		</div>
 	</div>
 	

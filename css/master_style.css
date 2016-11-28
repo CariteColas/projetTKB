@@ -9,17 +9,14 @@ body {
 
 nav {
 	display : block;
-	
 }
 
 aside {
 	display : block;
-
-	
 }
 
 a:hover{
-	  color: #279cd5!important;
+	color: #279cd5!important;
 }
 
 .header-top {
@@ -33,8 +30,6 @@ a:hover{
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
-
-
 }
 
 .nav>li {
@@ -339,4 +334,9 @@ a:hover{
          url('web_fonts/roboto_mediumitalic_macroman/Roboto-MediumItalic-webfont.svg#RobotoMediumItalic') format('svg');
     font-weight: 300;
     font-style: italic;
+}
+
+.carousel-control {
+	padding-top:10%;
+	width:5%;
 }
